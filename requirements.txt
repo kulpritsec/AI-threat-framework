@@ -1,0 +1,9 @@
+tensorflow
+pytorch
+cleverhans
+foolbox
+pandas
+matplotlib
+seaborn
+scikit-learn
+jupyter
