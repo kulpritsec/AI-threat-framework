@@ -1,0 +1,25 @@
+
+# attack_config.yaml
+
+fgsm:
+  enabled: true
+  epsilon: 0.1
+  description: "Fast Gradient Sign Method (evasion attack)"
+
+data_poisoning:
+  enabled: true
+  flip_map:
+    1: 7
+    7: 1
+  description: "Label flipping attack to simulate poisoning"
+
+adversarial_training:
+  enabled: true
+  epsilon: 0.2
+  dataset_subset_size: 5000
+  description: "Harden model with adversarial examples generated via FGSM"
+
+logging:
+  enabled: true
+  save_results: true
+  output_dir: "./reports"
